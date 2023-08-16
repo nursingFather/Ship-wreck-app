@@ -22,9 +22,9 @@ def main():
     st.sidebar.image(image2)
     st.title("Shipwreck Survival Predictor")
     if add_selectbox == 'Online':
-        Title = st.selectbox('Enter your Title:', ['Mr', 'Mrs', 'Miss', 'Master', 'Rare', 'Royal'])
-        Embarked  = st.selectbox(' Please select your Destination :', ['S', 'C', 'Q'])
-        Sex  = st.selectbox(' Please enter your Gender:', ['male', 'female'])
+        Title = st.selectbox('PLease select your title:', ['Mr', 'Mrs', 'Miss', 'Master', 'Rare', 'Royal'])
+        Embarked  = st.selectbox(' Please select your destination :', ['S', 'C', 'Q'])
+        Sex  = st.selectbox(' Select your gender:', ['male', 'female'])
         Pclass = st.number_input('Seat Class :', min_value=1, max_value=3, value=1)
         Fare = st.number_input('Ticket Price :', min_value=0, max_value=500, value=0)
         SibSp = st.number_input('Number of Siblings/Spouse aboard :', min_value=0, max_value=10, value=0)
