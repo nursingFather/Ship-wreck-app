@@ -24,12 +24,12 @@ def main():
     if add_selectbox == 'Online':
         Title = st.selectbox('Please enter your title:', ['Mr', 'Mrs', 'Miss', 'Master', 'Rare', 'Royal'])
         Embarked  = st.selectbox(' Select your destination :', ['S', 'C', 'Q'])
-        Sex  = st.selectbox(' Please select your gender:', ['male', 'female'])
-        Pclass = st.number_input('Please enter the Seat Class :', min_value=1, max_value=3, value=1)
-        Fare = st.number_input('Please enter the Ticket Price :', min_value=0, max_value=5000, value=0)
+        Sex  = st.selectbox(' Select your gender:', ['male', 'female'])
+        Pclass = st.number_input('Enter the Seat Class :', min_value=1, max_value=3, value=1)
+        Fare = st.number_input('Enter the Ticket Price :', min_value=0, max_value=5000, value=0)
         SibSp = st.number_input('Number of Siblings/Spouse aboard :', min_value=0, max_value=10, value=0)
         Parch = st.number_input('Number of Parent/Children aboard :', min_value=0,max_value=10, value=0)
-        Age = st.number_input('Please enter  your Age :', min_value=0, max_value=100, value=0)
+        Age = st.number_input('Please enter your Age :', min_value=0, max_value=100, value=0)
         output = ""
         output_prob = ""
         input_dict = {
