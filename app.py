@@ -47,7 +47,7 @@ def main():
         X = dv.transform([input_dict])
         y_pred = model.predict_proba(X)[0, 1]
         Survived = y_pred >= 0.6
-        output_prob = float(y_pred)
+        output_prob = round(float(y_pred), 3)
         output = bool(Survived)
     st.success('Survive: {0}, Survival Probability: {1}'.format(output, output_prob))
 
